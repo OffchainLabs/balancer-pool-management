@@ -1,4 +1,45 @@
 {
+    "arbitrum": {
+        "chainId": 152709604825713,
+        "defaultPrecision": 4,
+        "bFactory": "0x47601654c997eA5DF37eD061bcebf8581F9d86ED",
+        "proxy": "0x3A243b0cF2E55393562741711D78C6816Fc3140f",
+        "weth": "0x64737BfBe177d420E628Dc50Aa2624234a861cf0",
+        "multicall": "0xBEee73F7f7d4848E1700135ff795960F2Aba66DB",
+        "dsProxyRegistry": "0x39d17e3953917373c7d8901c7f8b616236340495",
+        "tokens": [
+            {
+                "symbol": "USDC",
+                "address": "0xA15c543D7854B1e90D91a91FDc7000e1d7d16F87",
+                "decimals": 18,
+                "ticker": "USDC",
+                "iconAddress": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+                "precision": 2,
+                "chartColor": "#2875ca"
+            },
+            {
+                "symbol": "ETH",
+                "address": "ether",
+                "decimals": 18,
+                "ticker": "ETH",
+                "iconAddress": "ether",
+                "precision": 4
+            },
+            {
+                "symbol": "DAI",
+                "address": "0xcB419b7E024585E68cA31E4Bb872c318e5BF4364",
+                "decimals": 18,
+                "ticker": "DAI",
+                "iconAddress": "0x6b175474e89094c44da98b954eedeac495271d0f",
+                "precision": 2
+            }
+        ],
+        "warnings": [],
+        "errors": {
+            "noBool": [],
+            "transferFee": []
+        }
+    },
     "ropsten": {
         "chainId": 3,
         "defaultPrecision": 4,

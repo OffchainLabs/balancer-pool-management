@@ -49,6 +49,8 @@ export default class CreatePoolFormStore {
     }
 
     @action removeToken(tokenAddress: string) {
+        console.log('this.tokens');
+        console.log(this.tokens);
         const tokenIndex = this.tokens.findIndex(
             token => token === tokenAddress
         );
