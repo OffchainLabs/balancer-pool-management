@@ -6,7 +6,9 @@
         "proxy": "0x3A243b0cF2E55393562741711D78C6816Fc3140f",
         "weth": "0x64737BfBe177d420E628Dc50Aa2624234a861cf0",
         "multicall": "0xBEee73F7f7d4848E1700135ff795960F2Aba66DB",
-        "dsProxyRegistry": "0x39d17e3953917373c7d8901c7f8b616236340495",
+        "dsProxyRegistry": "0x1fEf4f5C2EF92d4626759210A527BA6B55C22373",
+        "dsFactory": "0x41D89253Ae272E0db6DEDb834c2c3aECf8606E66",
+        "bActions": "0x7FD56F86C3D23E4e2fD18e441a1c4f0Cd90275b3",
         "tokens": [
             {
                 "symbol": "USDC",

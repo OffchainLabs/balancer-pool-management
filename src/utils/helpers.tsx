@@ -28,7 +28,9 @@ export const addZero = value => {
 export function bnum(
     val: string | number | utils.BigNumber | BigNumber
 ): BigNumber {
-    return new BigNumber(val.toString());
+    if (val) return new BigNumber(val.toString());
+    console.log('damn why is this zero');
+    return new BigNumber('0');
 }
 
 export function scale(input: BigNumber, decimalPlaces: number): BigNumber {
