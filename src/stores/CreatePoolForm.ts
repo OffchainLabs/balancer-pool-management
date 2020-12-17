@@ -235,7 +235,7 @@ export default class CreatePoolFormStore {
         let status = validateTokenValue(inputAmount.toString());
 
         if (status === ValidationStatus.VALID) {
-            if (accountBalance.lt(denormalizedBalance)) {
+            if (accountBalance && accountBalance.lt(denormalizedBalance)) {
                 status = ValidationStatus.INSUFFICIENT_BALANCE;
             } else if (denormalizedBalance.lt(bnum('1000000'))) {
                 status = ValidationStatus.MINIMUM_BALANCE;
@@ -285,10 +285,10 @@ export default class CreatePoolFormStore {
         this.addToken(daiToken.address);
         this.setTokenWeight(daiToken.address, '30');
         this.refreshWeights(daiToken.address);
-        const usdcToken = tokenMetadata.find(token => token.symbol === 'USDC');
-        this.addToken(usdcToken.address);
-        this.setTokenWeight(usdcToken.address, '20');
-        this.refreshWeights(usdcToken.address);
+        // const usdcToken = tokenMetadata.find(token => token.symbol === 'USDC');
+        // this.addToken(usdcToken.address);
+        // this.setTokenWeight(usdcToken.address, '20');
+        // this.refreshWeights(usdcToken.address);
         this.setFee('0.15');
     }
 
