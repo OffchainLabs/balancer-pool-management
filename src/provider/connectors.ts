@@ -1,20 +1,20 @@
 import Web3Modal from 'web3modal';
 import WalletConnectProvider from '@walletconnect/web3-provider';
-import Portis from '@portis/web3';
+// import Portis from '@portis/web3';
 
 const providerOptions = {
     walletconnect: {
         package: WalletConnectProvider,
         options: {
-            infuraId: process.env.REACT_APP_INFURA_ID,
+            rpc: 'https://kovan3.arbitrum.io/rpc',
         },
     },
-    portis: {
-        package: Portis,
-        options: {
-            id: '3f1c3cfc-7dd5-4e8a-aa03-71ff7396d9fe',
-        },
-    },
+    // portis: {
+    //     package: Portis,
+    //     options: {
+    //         id: '3f1c3cfc-7dd5-4e8a-aa03-71ff7396d9fe',
+    //     },
+    // },
 };
 
 export const web3Modal = new Web3Modal({
@@ -44,7 +44,7 @@ export const chainNameById = {
     '1': 'mainnet',
     '3': 'ropsten',
     '42': 'kovan',
-    '152709604825713': 'arbitrum',
+    '79377087078960': 'arbitrum',
 };
 
 export const isChainIdSupported = (chainId: number): boolean => {
@@ -55,15 +55,14 @@ const RPC_URLS: { [chainId: number]: string } = {
     1: process.env.REACT_APP_RPC_URL_1 as string,
     3: process.env.REACT_APP_RPC_URL_3 as string,
     42: process.env.REACT_APP_RPC_URL_42 as string,
-    152709604825713: process.env.REACT_APP_RPC_URL_152709604825713 as string,
+    79377087078960: process.env.REACT_APP_RPC_URL_79377087078960 as string,
 };
 
 export const SUBGRAPH_URLS: { [chainId: number]: string } = {
     1: process.env.REACT_APP_SUBGRAPH_URL_1 as string,
     3: process.env.REACT_APP_SUBGRAPH_URL_3 as string,
     42: process.env.REACT_APP_SUBGRAPH_URL_42 as string,
-    152709604825713: process.env
-        .REACT_APP_SUBGRAPH_URL_152709604825713 as string,
+    79377087078960: process.env.REACT_APP_SUBGRAPH_URL_79377087078960 as string,
 };
 
 export const backupUrls = {};

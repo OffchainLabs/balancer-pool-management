@@ -125,7 +125,9 @@ export default class TokenStore {
         );
 
         const iface = new Interface(tokenAbi);
-
+        console.log(tokenAddresses);
+        console.log(account);
+        console.log(spender);
         tokenAddresses.forEach(value => {
             calls.push([
                 value,
@@ -456,6 +458,7 @@ export default class TokenStore {
                 ]);
             }
         });
+        console.log({ tokensToTrack });
 
         promises.push(multi.aggregate(calls));
         promises.push(multi.getEthBalance(account));
@@ -467,6 +470,8 @@ export default class TokenStore {
             const balances = response.map(value =>
                 bnum(iface.functions.balanceOf.decode(value))
             );
+            console.log('{balances, response}');
+            console.log({ balances, response });
             if (tokensToTrack[0] === EtherKey) {
                 balances.unshift(bnum(ethBalance));
             }

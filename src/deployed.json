@@ -1,14 +1,14 @@
 {
     "arbitrum": {
-        "chainId": 152709604825713,
+        "chainId": 79377087078960,
         "defaultPrecision": 4,
-        "bFactory": "0x7A5Ce62dd29D3Ca3Db929a0f2b2a74f6bb363F84",
-        "proxy": "0xAa63764C8942343c903aA3469afe664f6E24FFe2",
-        "weth": "0x7073c616a8A3F277Ea4511fCe9EBB2656a1b87B8",
-        "multicall": "0xBEee73F7f7d4848E1700135ff795960F2Aba66DB",
-        "dsProxyRegistry": "0x1fEf4f5C2EF92d4626759210A527BA6B55C22373",
-        "dsFactory": "0x41D89253Ae272E0db6DEDb834c2c3aECf8606E66",
-        "bActions": "0x7FD56F86C3D23E4e2fD18e441a1c4f0Cd90275b3",
+        "bFactory": "0xB9b9D2BaE60b86AFC8ED15b2c74a8ecF3ff409C6",
+        "proxy": "0xD7cE90756f8c0a41577C9A23D04ADeF14Af97B5e",
+        "weth": "0xBfB0FF82993c07E92C3deb652711B66ffBe095A7",
+        "multicall": "0x65b71D9aEBfb61be7336B621f6322AB677ed3eb7",
+        "dsProxyRegistry": "0xaCD52aCCBc0706b86117D916990D795bA2c0cEE4",
+        "dsFactory": "0xa22dF27dA9F1E092DD530A82eB712AA0Fc68fBd9",
+        "bActions": "0x3A028B4e1E1aa45B6c7EfC2786dc2EAd750e6D43",
         "tokens": [
             {
                 "symbol": "ETH",
@@ -20,29 +20,36 @@
             },
             {
                 "symbol": "DAI",
-                "address": "0x8205bd0BcF13F90d25721CDD6643D7e8b557a3f5",
+                "address": "0x774a672966a509b3E6d8CB18D3C4ab6EE232B201",
                 "decimals": 18,
                 "ticker": "DAI",
                 "iconAddress": "0x6b175474e89094c44da98b954eedeac495271d0f",
-                "precision": 2
+                "precision": 4
+            },
+            {
+                "symbol": "ARB",
+                "address": "0xE41d965f6e7541139f8D9F331176867FB6972Baf",
+                "decimals": 18,
+                "ticker": "ARB",
+                "iconAddress": "0x6b175474e89094c44da98b954eedeac495271d0f",
+                "precision": 4
+            },
+            {
+                "symbol": "ATKN",
+                "address": "0x57Ca11067892510E022D65b0483b31Cd49155389",
+                "decimals": 18,
+                "ticker": "ATKN",
+                "iconAddress": "0x6b175474e89094c44da98b954eedeac495271d0f",
+                "precision": 4
             },
             {
                 "symbol": "WETH",
-                "address": "0x7073c616a8A3F277Ea4511fCe9EBB2656a1b87B8",
+                "address": "0xBfB0FF82993c07E92C3deb652711B66ffBe095A7",
                 "decimals": 18,
                 "ticker": "WETH",
                 "iconAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
                 "precision": 4,
                 "chartColor": "#433455"
-            },
-            {
-                "symbol": "MKR",
-                "address": "0xD02bEC7Ee5Ee73A271B144E829EeD1C19218D813",
-                "decimals": 18,
-                "ticker": "MKR",
-                "iconAddress": "0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2",
-                "precision": 4,
-                "chartColor": "#5eb8aa"
             }
         ],
         "warnings": [],

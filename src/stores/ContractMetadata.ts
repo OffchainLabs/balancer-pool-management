@@ -71,6 +71,7 @@ export default class ContractMetadataStore {
     @action loadWhitelistedTokenMetadata() {
         const chainName = getSupportedChainName();
         const metadata = JSON.parse(JSON.stringify(deployed));
+        console.log(metadata);
         const tokenMetadata = metadata.default[chainName].tokens;
 
         const contractMetadata = {
@@ -85,6 +86,7 @@ export default class ContractMetadataStore {
             errors: metadata.default[chainName].errors,
             tokens: [] as TokenMetadata[],
         };
+        console.log(contractMetadata);
 
         tokenMetadata.forEach(token => {
             const {
