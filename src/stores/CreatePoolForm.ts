@@ -281,7 +281,7 @@ export default class CreatePoolFormStore {
     private setDefaults() {
         const { contractMetadataStore } = this.rootStore;
         const tokenMetadata = contractMetadataStore.getWhitelistedTokenMetadata();
-        const daiToken = tokenMetadata.find(token => token.symbol === 'DAI');
+        const daiToken = tokenMetadata.find(token => token.symbol === 'AUSD');
         this.addToken(daiToken.address);
         this.setTokenWeight(daiToken.address, '30');
         this.refreshWeights(daiToken.address);

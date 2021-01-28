@@ -35,6 +35,14 @@
                 "precision": 4
             },
             {
+                "symbol": "AUSD",
+                "address": "0x09018Ee44C0e99689f5f82Ce41E6b983AAEDB2A0",
+                "decimals": 18,
+                "ticker": "AUSD",
+                "iconAddress": "",
+                "precision": 4
+            },
+            {
                 "symbol": "WETH",
                 "address": "0xBfB0FF82993c07E92C3deb652711B66ffBe095A7",
                 "decimals": 18,
