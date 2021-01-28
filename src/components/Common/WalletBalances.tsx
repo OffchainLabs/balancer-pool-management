@@ -61,6 +61,8 @@ export const TokenIconAddress = (address, isSupported) => {
     if (!isSupported || address === 'unknown') {
         return NotSupported;
     }
+    if (address === '')
+        return 'https://ropsten.etherscan.io/images/main/empty-token.png';
     if (address === 'ether') {
         return `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/info/logo.png`;
     } else {

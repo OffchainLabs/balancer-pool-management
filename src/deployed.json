@@ -19,19 +19,11 @@
                 "precision": 4
             },
             {
-                "symbol": "DAI",
-                "address": "0x774a672966a509b3E6d8CB18D3C4ab6EE232B201",
-                "decimals": 18,
-                "ticker": "DAI",
-                "iconAddress": "0x6b175474e89094c44da98b954eedeac495271d0f",
-                "precision": 4
-            },
-            {
                 "symbol": "ARB",
                 "address": "0xE41d965f6e7541139f8D9F331176867FB6972Baf",
                 "decimals": 18,
                 "ticker": "ARB",
-                "iconAddress": "0x6b175474e89094c44da98b954eedeac495271d0f",
+                "iconAddress": "",
                 "precision": 4
             },
             {
@@ -39,7 +31,7 @@
                 "address": "0x57Ca11067892510E022D65b0483b31Cd49155389",
                 "decimals": 18,
                 "ticker": "ATKN",
-                "iconAddress": "0x6b175474e89094c44da98b954eedeac495271d0f",
+                "iconAddress": "",
                 "precision": 4
             },
             {
