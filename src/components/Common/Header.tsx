@@ -29,6 +29,26 @@ const AppName = styled.div`
     color: var(--app-header-text);
     margin-left: 12px;
 `;
+const ArbInfo = styled.div`
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 9px;
+    letter-spacing: 1px;
+    color: var(--app-header-text);
+    margin-left: 12px;
+    padding-right: 10px;
+`;
+const ArbTitle = styled.div`
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 9px;
+    letter-spacing: 1px;
+    color: var(--app-header-text);
+    margin-left: 12px;
+    padding-left: 10px;
+`;
 
 const StyledLink = styled(Link)`
     display: flex;
@@ -50,10 +70,26 @@ const Header = () => {
             <HeaderElement>
                 <StyledLink to={`/`}>
                     <img alt="pebbles" src="pebbles-pad.svg" />
-                    <AppName>Balancer</AppName>
+                    <AppName>arBalancer</AppName>
                 </StyledLink>
+                <ArbTitle>Layer 2 port</ArbTitle>
             </HeaderElement>
             <HeaderElement>
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={`https://portal.arbitrum.io`}
+                >
+                    <ArbInfo>More dApps</ArbInfo>
+                </a>
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={`https://faucet.arbitrum.io`}
+                >
+                    <ArbInfo>Token Faucet</ArbInfo>
+                </a>
+                &nbsp;
                 <Wallet />
             </HeaderElement>
         </HeaderFrame>
